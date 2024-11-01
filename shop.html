@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин - Товары</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="login.html">Авторизация</a></li>
+                <li><a href="cart.php">Корзина</a></li>
+
+            </ul>
+        </nav>
+        <h1>Наши товары</h1>
+    </header>
+    
+    <!-- Контейнер для отображения товаров -->
+    <main>
+        <section class="products-grid" id="productsContainer">
+            <!-- Товары будут загружены здесь через JavaScript -->
+        </section>
+        <!-- Всплывающее окно -->
+        <div id="popup" class="popup hidden">
+            <div class="popup-content">
+                <span id="closePopup" class="close-button">&times;</span>
+                <p>Товар добавлен в корзину!</p>
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="fetch_products.js"></script>
+</body>
+</html>

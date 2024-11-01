@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница - Магазин</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="login.html">Авторизация</a></li>
+                <li><a href="cart.php">Корзина</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Добро пожаловать в наш магазин!</h1>
+            <p>Мы предлагаем широкий ассортимент товаров по доступным ценам. Здесь вы найдете всё, что вам нужно!</p>
+            <a href="shop.html" class="shop-button">Перейти в магазин</a>
+        </section>
+
+        <section class="about">
+            <h2>О нашем магазине</h2>
+            <p>В нашем магазине вы найдете товары на любой вкус: от электроники до одежды, от бытовой техники до аксессуаров. Мы стремимся предлагать только качественную продукцию и отличное обслуживание, чтобы сделать ваши покупки максимально приятными.</p>
+            <p>Мы гордимся тем, что можем предложить уникальные товары от местных производителей и знаменитых брендов, а также специальные акции и скидки для наших клиентов.</p>
+        </section>
+
+        <section class="features">
+            <h2>Наши особенности</h2>
+            <ul>
+                <li><strong>Широкий выбор товаров:</strong> Мы постоянно обновляем наш ассортимент, чтобы предложить вам самые последние новинки и актуальные товары.</li>
+                <li><strong>Конкурентные цены:</strong> Мы работаем напрямую с производителями, чтобы предложить вам лучшие цены на рынке.</li>
+                <li><strong>Удобство покупок:</strong> Легкий и интуитивно понятный интерфейс сайта, который позволяет быстро находить нужные товары и оформлять заказы.</li>
+                <li><strong>Отличная поддержка клиентов:</strong> Наша команда всегда готова помочь вам с любыми вопросами и предложить квалифицированную помощь.</li>
+            </ul>
+        </section>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/slide1.jpg" style="width:100%">
+                <div class="text">Описание первого слайда</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="images/slide2.jpg" style="width:100%">
+                <div class="text">Описание второго слайда</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="images/slide3.jpg" style="width:100%">
+                <div class="text">Описание третьего слайда</div>
+            </div>
+        
+            <!-- Кнопки управления слайд-шоу -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        
+
+        <section class="call-to-action">
+            <h2>Не упустите возможность!</h2>
+            <p>Подпишитесь на нашу рассылку, чтобы первыми узнавать о новых поступлениях, акциях и скидках!</p>
+            <a href="signup.html" class="signup-button">Подписаться на новости</a>
+        </section>
+    </main>
+
+     <!-- Футер -->
+    <footer>
+        <p>&copy; 2023 Магазин. Все права защищены.</p>
+    </footer>
+</body>
+</html>
+
+

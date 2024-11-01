@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+                <li><a href="cart.php">Корзина</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Форма авторизации -->
+    <h2>Авторизация</h2>
+    <div class="error-message" id="errorMessage" style="display: none;">Неверное имя пользователя или пароль.</div>
+
+    <form action="login.php" method="POST">
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Войти</button>
+    </form>
+</body>
+</html>
